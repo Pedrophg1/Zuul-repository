@@ -114,9 +114,6 @@ public class Game
         } else if (commandWord.equals("dance")) {
             System.out.println("vc estar dançando");
         }
-        else if (commandWord.equals("back")) {
-                return getLastVisitedRoom;
-        }
 
         else {
             System.out.println("I don't know what you mean...");
