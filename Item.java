@@ -1,3 +1,5 @@
+import java.util.List;
+import java.util.ArrayList;
 public class Item {
     private  String itemDescription;
     private String cor;
@@ -12,21 +14,4 @@ public class Item {
     public void mudarCor(){
 
     }
-}
-    public class ItemCollection {
-        private List<Item> items;
-
-        public ItemCollection() {
-            items = new ArrayList<>();
-        }
-
-        public void addItem(Item item) {
-            items.add(item);
-        }
-
-        public List<Item> getItems() {
-            return items;
-        }
-
-
 }
