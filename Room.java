@@ -22,7 +22,8 @@ public class Room
     private Room eastExit;
     private Room westExit;
     private HashMap<String ,Room> exits;
-
+    private Item mascara;
+    private Room lastVisitedRoom;
     /**
      * Create a room described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -33,6 +34,21 @@ public class Room
     {
         this.description = description;
         exits=new HashMap<>();
+    }
+    public Item printItem(){
+        return mascara;
+
+    }
+    public void setLastVisitedRoom(Room room) {
+        lastVisitedRoom = room;
+    }
+
+    /**
+     * Get the room the player came from.
+     * @return The room the player came from.
+     */
+    public Room getLastVisitedRoom() {
+        return lastVisitedRoom;
     }
 
 
@@ -80,5 +96,26 @@ public class Room
     {
         return description;
     }
+    /**
+     * Return a description of the room’s exits,
+     * for example, "Exits: north west".
+     * @return A description of the available exits.
+     */
+//    public String getExitString(){
+//        return getExit(String);
+//    }
 
+
+
+
+    public String getExitString(){
+
+    String returnString = "Exits: ";
+     Set<String> keys exits.keySet();
+        for(String exit: keys) {
+        return String += exit;
+    }
+
+    }
+        return returnString;
 }

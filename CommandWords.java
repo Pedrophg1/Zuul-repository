@@ -13,8 +13,7 @@ public class CommandWords
 {
     // a constant array that holds all valid command words
     private static final String[] validCommands = {
-        "go", "quit", "help"
-    };
+        "go", "quit", "help" ,"dance","back"
 
     /**
      * Constructor - initialise the command words.
@@ -30,6 +29,9 @@ public class CommandWords
      * false if it isn't.
      */
 
+    public String getCommandList() {
+        return String.join(", ", validCommands);
+    }
 
     public boolean isCommand(String aString)
     {
