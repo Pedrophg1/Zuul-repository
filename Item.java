@@ -9,6 +9,10 @@ public class Item {
 
 
     }
+    public void mudarCor(){
+
+    }
+}
     public class ItemCollection {
         private List<Item> items;
 

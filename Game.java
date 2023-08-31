@@ -113,12 +113,12 @@ public class Game
             wantToQuit = quit(command);
         } else if (commandWord.equals("dance")) {
             System.out.println("vc estar dançando");
+        }
+        else if (commandWord.equals("back")) {
+                return getLastVisitedRoom;
+        }
 
-            else if (commandWord.equals("back")) {
-                return lastVisitedRoom;
-            }
-
-        } else {
+        else {
             System.out.println("I don't know what you mean...");
         }
 
